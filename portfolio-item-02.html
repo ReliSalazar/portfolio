@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secure Password validator And Generator</title>
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="normalize.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="img/logo.png" alt="" />
+    </div>
+
+    <button class="nav-toggle" aria-label="toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+        <li class="nav__item"><a href="index.html#services" class="nav__link">My Sevices</a></li>
+        <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
+        <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Introduction -->
+  <section class="intro">
+    <h1 class="section__title section__title--intro">
+      secure password <strong>validator and generator</strong>
+    </h1>
+    <p class="section__subtitle section__subtitle--intro">I don't know how secure really is!</p>
+    <img src="img/portfolio/portfolio-02.jpg" alt="" class="intro__img" />
+  </section>
+
+  <div class="portfolio-item-individual">
+    <p>This is just a curiosity that I did one day when I was bored, I was learning about regular expressions and I
+      wanted to test if I was able to create a program that validates how secure a password is following a couple of
+      conditions:</p>
+      <img src="img/portfolio/portfolio-details-02.png" alt="">
+    <p>the regex I used is the next:</p>
+    <p><code>/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-.\s]).{12,}$/</code></p>
+    <p>It basically summarizes in at least 1 upper, 1 lower, 1 number, 1 simbol and a min length of 12 and I just use
+      vanilla HTML, CSS and JS to this project.</p>
+    <p>If you want you can take a look at the code in the <a target="_blank" rel="noopener noreferrer"
+        href="https://github.com/ReliSalazar/secure-password-validator-and-generator">github
+        repository!</a>
+    </p>
+    <p>Or you can use the validator itself in the <a target="_blank" rel="noopener noreferrer"
+        href="https://relisalazar.github.io/secure-password-validator-and-generator/">github pages link!</a></p>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <a href="mailto:naitvenefy@gmail.com" class="footer__link">naitvenefy@gmail.com</a>
+    <ul class="social-list">
+      <li class="social-list__item">
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/ReliSalazar" class="social-list__link"><i
+            class="fab fa-github"></i></a>
+      </li>
+      <li class="social-list__item">
+        <a target="_blank" rel="noopener noreferrer" href="https://codepen.io/Reli_" class="social-list__link"><i
+            class="fab fa-codepen"></i></a>
+      </li>
+      <li class="social-list__item">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UC8t-pZwHzsWNuFxv8lZGc7Q"
+          class="social-list__link"><i class="fab fa-youtube"></i></a>
+      </li>
+      <li class="social-list__item">
+        <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/reli_salazar"
+          class="social-list__link"><i class="fab fa-twitter"></i></a>
+      </li>
+    </ul>
+  </footer>
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>
