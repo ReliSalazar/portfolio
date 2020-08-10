@@ -148,7 +148,7 @@ header {
 }
 
 .logo {
-  max-width: 100px;
+  max-width: 200px;
 }
 
 .nav {
@@ -188,9 +188,10 @@ header {
 }
 
 .nav-toggle {
-  padding: 0.5em;
+  /* padding: 0.5em; */
+  padding: 1em;
   background: transparent;
-  border: 0;
+  border: 1px solid var(--clr-dark);
   cursor: pointer;
   position: absolute;
   right: 1em;
@@ -208,10 +209,12 @@ header {
 
 .nav-open .hamburger {
   transform: rotate(0.625turn);
+  background-color: var(--clr-accent);
 }
 
 .nav-open .hamburger::before {
   transform: rotate(90deg) translateX(-6px);
+  background-color: var(--clr-accent);
 }
 
 .nav-open .hamburger::after {
@@ -226,7 +229,7 @@ header {
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-  background: var(--clr-accent);
+  background: var(--clr-dark);
   width: 2em;
   height: 3px;
   border-radius: 1em;
@@ -295,7 +298,8 @@ header {
 /*  My services section  */
 
 .my-services {
-  background-color: var(--clr-dark);
+  /* background-color: var(--clr-dark); */
+  background-color: #777;
   background-image: url(../img/services-bg.jpg);
   background-size: cover;
   background-blend-mode: multiply;
